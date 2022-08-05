@@ -1,0 +1,39 @@
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script text="" src="./main.js"></script>
+    <title>Drawing with Particle</title>
+</head>
+
+<body>
+    <div id="header">&copy; 2022 Onuki Tomoya</div>
+    <div id="control-panel">
+        <input type="checkbox" name="show-btn" id="show-btn">
+        <label  id="show-btn-label" for="show-btn">&#9660;</label>
+
+        <div id="control">
+            <label for="particle-speed-range">Speed: 50</label>
+            <input type="range" id="particle-speed-range" list="particle-speed-seg" min="0" max="100" value="50">
+            <datalist id="particle-speed-seg">
+                <option value="0"></option>
+                <option value="50"></option>
+                <option value="100"></option>
+            </datalist>
+
+            <label for="particle-num-range">Num of Particles: 1000</label>
+            <input type="range" id="particle-num-range" list="particle-num-seg" min="100" max="1000" value="1000">
+            <datalist id="particle-num-seg">
+                <option value="100"></option>
+                <option value="1000"></option>
+            </datalist>
+        </div>
+    </div>
+
+    <canvas id="main"></canvas>
+</body>
+
+</html>
